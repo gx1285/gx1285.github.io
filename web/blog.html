@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- webフォルダはそのままbuildにcopyされます。 -->
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>gx1285</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="icon" href="icon.png" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500&display=swap");
+      body {
+        user-select: none;
+        font-family: "Zen Maru Gothic", "Helvetica Neue", "Helvetica",
+          "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial",
+          "Yu Gothic Medium", "Meiryo", sans-serif;
+        background-image: url(img.png);
+        scrollbar-width: thin;
+        scrollbar-color: #17585d #ccc;
+      }
+      body::-webkit-scrollbar {
+        width: 10px;
+      }
+      body::-webkit-scrollbar-track {
+        background-color: rgb(70, 70, 70);
+      }
+      body::-webkit-scrollbar-thumb {
+        background-color: hsl(46, 100%, 50%);
+      }
+      #tab {
+        margin: auto;
+        text-align: center;
+        background-color: aquamarine;
+      }
+      th,
+      td {
+        border: solid 1px;
+        padding: 10px;
+      }
+
+      table {
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ソースまでご確認ありがとうございます。 -->
+    <!-- 良ければリポジトリもご覧ください。 -->
+    <!-- Thank you for checking to the source. -->
+    <!--See also the repository if you like. -->
+    <!-- https://github.com/gx1285/gx1285.github.io -->
+    <section class="hero is-link">
+      <nav class="navbar">
+        <div class="container">
+          <div id="navMenu" class="navbar-menu">
+            <div class="navbar-start">
+              <a class="navbar-item" href="index"> ホーム </a>
+              <a class="navbar-item" href="blog"> ブログ </a>
+            </div>
+
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <div class="buttons">
+                  <a
+                    class="button is-warning"
+                    href="https://github.com/gx1285/gx1285.github.io"
+                    >Github レポジトリ</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="hero-body">
+        <p style="text-align: center; font-size: 3em" class="title">
+          <img src="icon.png" width="54" height="54" />｜gx1285 blog
+        </p>
+        <p style="text-align: center; font-size: 2em" class="subtitle">
+          gx1285のブログへようこそ！
+        </p>
+      </div>
+    </section>
+    <h1 style="font-size: 3em; text-align: center; color: white">Blogs</h1>
+    <table id="tab">
+      <tbody>
+        <tr>
+          <th>Name</th>
+          <td>Date</td>
+        </tr>
+        <tr>
+          <th><a href="blog/first">自分のサイトを作ってみた。</a></th>
+          <td>2022/12/27</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
